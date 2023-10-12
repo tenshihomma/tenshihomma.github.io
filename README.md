@@ -1,1 +1,0 @@
-# tenshihomma.github.io
