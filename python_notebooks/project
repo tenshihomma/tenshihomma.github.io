@@ -1,3 +1,8 @@
+import altair as alt
+
+# Define the brush for interaction
+brush = alt.selection_interval(encodings=['x', 'y'])
+
 # Heatmap (chart1)
 chart1 = alt.Chart.from_dict({
   "data": {"url": "https://data.wa.gov/resource/f6w7-q2d2.csv"},
