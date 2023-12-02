@@ -9,18 +9,25 @@ custom_js:
   - vega-embed.min
   - justcharts
 ---
-Exploring the Electrifying World of Electric Vehicles
+# Exploring the Electrifying World of Electric Vehicles
 by Tenshi Homma
 
 ![Global electric vehicle stock by region, 2010-2020](assets/pngs/photo1.png)
+---
 Citation: IEA, Global electric passenger car stock, 2010-2020, IEA, Paris https://www.iea.org/data-and-statistics/charts/global-electric-passenger-car-stock-2010-2020, IEA. Licence: CC BY 4.0
-![Global Electric car registrations and market share, 2015-2020Global electric vehicle stock by region, 2010-2020](assets/pngs/photo2.png)
+
+![Global Electric car registrations and market share](assets/pngs/photo2.png)
+---
 Citation:IEA, Global Electric car registrations and market share, 2015-2020, IEA, Paris https://www.iea.org/data-and-statistics/charts/global-electric-car-registrations-and-market-share-2015-2020, IEA. Licence: CC BY 4.0
 
 EV Data
+---
+Data comes from this [Data.gov](https://catalog.data.gov/dataset/electric-vehicle-population-data)
 <vegachart schema-url="{{ site.baseurl }}/assets/json/project_part3.json" style="width: 100%"></vegachart>
 
 Citation:data.wa.gov,Electric Vehicle Population Data,https://catalog.data.gov/dataset/electric-vehicle-population-data
+
+[Code Used](https://github.com/tenshihomma/tenshihomma.github.io/blob/main/python_notebooks/project)
 
 The World of Electric Vehicles
 This automotive technology paradigm is embodied in the electric vehicle (EV). I will focus on EV growth statistics, and their contribution to a greener world. The purpose of this interactive visualization is to present this data in a way that is easy to understand so that even those with no knowledge of data analysis can make sense of it.
