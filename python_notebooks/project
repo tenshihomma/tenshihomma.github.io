@@ -1,0 +1,50 @@
+# Heatmap (chart1)
+chart1 = alt.Chart.from_dict({
+  "data": {"url": "https://data.wa.gov/resource/f6w7-q2d2.csv"},
+  "mark": "rect",
+  "height": 400,
+  "encoding": {
+    "x": {
+        "field": "model_year",
+        "type": "ordinal",
+        "axis": {"title": "Model Year"}
+    },
+    "y": {
+        "field": "make",
+        "type": "ordinal",
+        "axis": {"title": "Make"}
+    },
+    "color": {
+        "aggregate": "count",
+        "field": "vin_1_10",
+        "type": "quantitative",
+        "scale": {"scheme": "greens"},
+        "legend": {"title": "Number of Vehicles"}
+    }
+  }
+}).add_selection(brush)
+
+# Bar Chart (chart2)
+chart2 = alt.Chart.from_dict({
+  "data": {"url": "https://data.wa.gov/resource/f6w7-q2d2.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+        "field": "model",
+        "type": "ordinal",
+        "title": "Model"
+    },
+    "y": {
+        "aggregate": "count",
+        "field": "vin_1_10",
+        "type": "quantitative",
+        "title": "Count of Vehicles"
+    },
+    "color": {
+        "field": "model",
+        "type": "nominal"
+    }
+  }
+}).transform_filter(brush)
+# Combine the charts
+chart = chart1 & chart2
